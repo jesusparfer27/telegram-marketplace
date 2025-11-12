@@ -20,14 +20,14 @@ export const ITEMS: Item[] = [
     id: 'cookie',
     name: 'Cookie 🍪',
     description: 'A sweet virtual cookie',
-    price: 3,
+    price: 2,
     icon: '🍪'
   },
   {
     id: 'hamburger',
     name: 'Hamburger 🍔',
     description: 'A tasty virtual hamburger',
-    price: 5,
+    price: 3,
     icon: '🍔'
   }
 ];
