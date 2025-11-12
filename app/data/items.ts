@@ -13,21 +13,21 @@ export const ITEMS: Item[] = [
     id: 'ice_cream',
     name: 'Ice Cream 🍦',
     description: 'A delicious virtual ice cream',
-    price: 0,
+    price: 1,
     icon: '🍦'
   },
   {
     id: 'cookie',
     name: 'Cookie 🍪',
     description: 'A sweet virtual cookie',
-    price: 0,
+    price: 3,
     icon: '🍪'
   },
   {
     id: 'hamburger',
     name: 'Hamburger 🍔',
     description: 'A tasty virtual hamburger',
-    price: 0,
+    price: 5,
     icon: '🍔'
   }
 ];
