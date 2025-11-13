@@ -3,6 +3,17 @@
 import { Item } from '@/app/data/items';
 import ItemCard from './ItemCard';
 
+// ✅ Declaración global para TypeScript
+declare global {
+  interface Window {
+    Telegram?: {
+      WebApp?: {
+        close: () => void;
+      };
+    };
+  }
+}
+
 interface ItemsListProps {
   items: Item[];
   onPurchase: (item: Item) => void;
@@ -23,7 +34,7 @@ export default function ItemsList({ items, onPurchase }: ItemsListProps) {
 
       <div className="space-y-4">
         {items.map((item) => (
-          <ItemCard 
+          <ItemCard
             key={item.id}
             item={item}
             onPurchase={onPurchase}
@@ -34,7 +45,7 @@ export default function ItemsList({ items, onPurchase }: ItemsListProps) {
       <div className="mt-6 flex justify-center">
         <button
           onClick={handleCloseApp}
-          className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg shadow-md transition"
+          className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-xl shadow-md transition"
         >
           Cerrar Mini App
         </button>
